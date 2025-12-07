@@ -12,6 +12,8 @@
   <Folder Name="/src/">
     <Project Path="src/CleanArchitecture.Application.Abstractions/CleanArchitecture.Application.Abstractions.csproj" />
     <Project Path="src/CleanArchitecture.Domain.Abstractions/CleanArchitecture.Domain.Abstractions.csproj" />
+    <Project Path="src/CleanArchitecture.Mediator.AspNetCore/CleanArchitecture.Mediator.AspNetCore.csproj" Id="5b281847-220e-4a0b-959c-a4ac5f4b6975" />
+    <Project Path="src/CleanArchitecture.Mediator/CleanArchitecture.Mediator.csproj" Id="adfdf30b-9972-448a-8934-c2f86413fa8c" />
     <Project Path="src/CleanArchitecture.Repository.EntityFramework/CleanArchitecture.Repository.EntityFramework.csproj" Id="c2e51ce0-cddb-4283-bb62-3585961aaf98" />
     <Project Path="src/CleanArchitecture.Repository/CleanArchitecture.Repository.csproj" />
     <Project Path="src/CleanArchitecture.Specification/CleanArchitecture.Specification.csproj" />

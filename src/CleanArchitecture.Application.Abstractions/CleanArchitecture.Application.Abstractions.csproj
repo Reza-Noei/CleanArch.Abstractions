@@ -5,6 +5,7 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Authors>Reza Noei</Authors>
 		<PackageId>CleanArchitecture.Application.Abstractions</PackageId>
 		<Description>Application abstractions for Clean Architecture.</Description>
 		<PackageIcon>icon.png</PackageIcon>

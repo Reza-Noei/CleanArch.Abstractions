@@ -6,6 +6,7 @@
 		<Nullable>enable</Nullable>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<PackageId>CleanArchitecture.Repository</PackageId>
+		<Authors>Reza Noei</Authors>
 		<Description>Domain abstractions for Clean Architecture.</Description>
 		<ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
 	</PropertyGroup>

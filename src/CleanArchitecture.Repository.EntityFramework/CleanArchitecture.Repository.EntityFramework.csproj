@@ -6,6 +6,7 @@
 		<Nullable>enable</Nullable>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<PackageId>CleanArchitecture.Repository.EntityFramework</PackageId>
+		<Authors>Reza Noei</Authors>
 		<Description>EntityFramework repositories for Clean Architecture.</Description>
 		<PackageIcon>icon.png</PackageIcon>
 		<ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>

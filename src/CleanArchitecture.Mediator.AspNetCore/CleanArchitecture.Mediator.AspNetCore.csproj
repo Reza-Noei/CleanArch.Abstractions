@@ -5,24 +5,19 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<PackageId>CleanArchitecture.Specification</PackageId>
+		<PackageId>CleanArchitecture.Mediator.AspNetCore</PackageId>
 		<Authors>Reza Noei</Authors>
-		<Description>Specification pattern for Clean Architecture.</Description>
+		<Description>ASP.NET Core extensions and integration utilities for CleanArchitecture.Mediator.</Description>
 		<PackageIcon>icon.png</PackageIcon>
 		<ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<InternalsVisibleTo Include="CleanArchitecture.Repository.EntityFramework"/>
 		<None Include="..\..\build\icons\icon.png" Pack="true" PackagePath="" />
 	</ItemGroup>
-	
-	<ItemGroup>
-		<Using Include="System" />
-		<Using Include="System.Collections.Generic" />
-		<Using Include="System.Linq" />
-		<Using Include="System.Linq.Expressions" />
-		<Using Include="System.Threading" />
-		<Using Include="System.Threading.Tasks" />
-	</ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CleanArchitecture.Mediator\CleanArchitecture.Mediator.csproj" />
+  </ItemGroup>
+
 </Project>
