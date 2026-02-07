@@ -2,9 +2,9 @@
 
 namespace CleanArch.Outbox.RabbitMq.HostedService;
 
-internal class InboxMessageQueue : IInboxMessageQueue
+internal class OutboxMessageQueue : IOutboxMessageQueue
 {
-    public void Enqueue(InboxMessage message)
+    public void Enqueue(OutboxRecord message)
     {
         if (message == null)
         {
@@ -15,7 +15,7 @@ internal class InboxMessageQueue : IInboxMessageQueue
         _signal.Release();
     }
 
-    public async Task<InboxMessage?> DequeueAsync(CancellationToken cancellationToken = default)
+    public async Task<OutboxRecord?> DequeueAsync(CancellationToken cancellationToken = default)
     {
         await _signal.WaitAsync(cancellationToken);
 
@@ -26,13 +26,12 @@ internal class InboxMessageQueue : IInboxMessageQueue
     }
 
     private SemaphoreSlim _signal = new SemaphoreSlim(0);
-    private ConcurrentQueue<InboxMessage> _queue = new ConcurrentQueue<InboxMessage>();
+    private ConcurrentQueue<OutboxRecord> _queue = new ConcurrentQueue<OutboxRecord>();
 }
 
-
-public interface IInboxMessageQueue
+public interface IOutboxMessageQueue
 {
-    void Enqueue(InboxMessage message);
+    void Enqueue(OutboxRecord message);
 
-    Task<InboxMessage?> DequeueAsync(CancellationToken cancellationToken = default);
+    Task<OutboxRecord?> DequeueAsync(CancellationToken cancellationToken = default);
 }

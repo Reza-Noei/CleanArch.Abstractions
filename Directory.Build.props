@@ -1,8 +1,8 @@
 <Project>
 	<PropertyGroup>
-		<Authors>Reza Noei</Authors>
+		<Authors>AmirReza Ghasemi, Reza Noei</Authors>
 		<Company>Noei</Company>
-		<RepositoryUrl>https://github.com/Reza-Noei/CleanArchitecture.Abstractions</RepositoryUrl>
+		<RepositoryUrl>https://github.com/Reza-Noei/CleanArch.Abstractions</RepositoryUrl>
 		<Version>0.3.1</Version>
 		<AssemblyVersion>0.3.1.0</AssemblyVersion>
 		<FileVersion>0.3.1.0</FileVersion>

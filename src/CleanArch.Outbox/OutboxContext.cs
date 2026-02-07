@@ -19,10 +19,10 @@ public abstract class OutboxContext : DbContext
         base.OnModelCreating(modelBuilder);
 
         if (_includeMessageOutbox)
-            new OutboxMessageConfiguration().Configure(modelBuilder.Entity<OutboxMessage>());
+            new OutboxRecordConfiguration().Configure(modelBuilder.Entity<OutboxRecord>());
 
         if (_includeMessageInbox)
-            new InboxMessageConfiguration().Configure(modelBuilder.Entity<InboxMessage>());
+            new InboxRecordConfiguration().Configure(modelBuilder.Entity<InboxRecord>());
     }
 
     private readonly bool _includeMessageInbox = true;

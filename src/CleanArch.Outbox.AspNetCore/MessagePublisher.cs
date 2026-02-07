@@ -39,7 +39,7 @@ public sealed class MessagePublisher : IMessagePublisher, IAsyncDisposable
             _options.RoutingKey);
     }
 
-    public async Task PublishAsync<TMessage>(TMessage message, CancellationToken cancellationToken = default) where TMessage : OutboxMessage
+    public async Task PublishAsync<TMessage>(TMessage message, CancellationToken cancellationToken = default) where TMessage : OutboxRecord
     {
         await EnsureInitializedAsync(cancellationToken);
 

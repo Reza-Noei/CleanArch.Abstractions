@@ -1,24 +1,22 @@
-﻿using CleanArch.Outbox.Abstractions;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
+﻿using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
 namespace CleanArch.Outbox.RabbitMq.HostedService;
 
-internal class OutboxHostedService : BackgroundService
+internal class InboxHostedService : BackgroundService
 {
-    public OutboxHostedService(IServiceProvider serviceProvider, 
-                               IOutboxMessageQueue outboxMessageQueue,
-                               IMessagePublisher messagePublisher,
-                               ILogger<OutboxHostedService> logger)
+    public InboxHostedService(IServiceProvider serviceProvider,
+                              IInboxMessageQueue inboxMessageQueue,
+                              IMessagePublisher messagePublisher,
+                              ILogger<OutboxHostedService> logger)
     {
         // Non-Singleton instances can't be injected into a Singleton service.
         // Thus we need Service provider to create scope for other services.
         _serviceProvider = serviceProvider;
 
-        _outboxMessageQueue = outboxMessageQueue;
+        _inboxMessageQueue = inboxMessageQueue;
         _messagePublisher = messagePublisher;
-        
+
         _logger = logger;
     }
 
@@ -27,14 +25,14 @@ internal class OutboxHostedService : BackgroundService
         _logger.LogInformation("Parcel Export Hosted Service is running.");
 
         // Todo: Read and Enqueue all unprocessed messages here. 
+        // Todo: RabbitMq Subscribe
 
         while (!cancellationToken.IsCancellationRequested)
         {
-            OutboxMessage? message = await _inboxMessageQueue.DequeueAsync(cancellationToken);
+            InboxRecord? message = await _inboxMessageQueue.DequeueAsync(cancellationToken);
 
-            // Todo 1: Save OutboxMessage.
-            // Todo 2: publish Message using RabbitMq.
-            // Todo 3: after publish update outbox message.
+            // Todo 1: Mediator.Send(message)
+            // Todo 2: Update State Inbox Message
         }
 
         _logger.LogInformation("Parcel Export Hosted Service is stopping.");
@@ -42,7 +40,7 @@ internal class OutboxHostedService : BackgroundService
 
 
     private readonly IServiceProvider _serviceProvider;
-    private readonly IOutboxMessageQueue _outboxMessageQueue;
+    private readonly IInboxMessageQueue _inboxMessageQueue;
     private readonly IMessagePublisher _messagePublisher;
     private readonly ILogger<OutboxHostedService> _logger;
 }

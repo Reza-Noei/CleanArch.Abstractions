@@ -1,6 +1,6 @@
 ﻿namespace CleanArch.Outbox;
 
-public class InboxMessage
+internal class OutboxRecord
 {
     public Guid Id { get; init; }
 
@@ -14,3 +14,4 @@ public class InboxMessage
 
     public string? Error { get; set; }
 }
+

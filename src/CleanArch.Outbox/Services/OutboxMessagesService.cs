@@ -4,7 +4,7 @@ namespace CleanArch.Outbox.Services;
 
 internal class OutboxMessagesService : IOutboxMessagesService
 {
-    public Task<IEnumerable<OutboxMessage>> GetUnprocessedListAsync()
+    public Task<IEnumerable<OutboxRecord>> GetUnprocessedListAsync()
     {
         throw new NotImplementedException();
     }

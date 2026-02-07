@@ -12,5 +12,5 @@ public interface IMessagePublisher
     /// <param name="message">Message payload</param>
     /// <param name="cancellationToken"></param>
     /// <returns></returns>
-    Task PublishAsync<TMessage>(TMessage message, CancellationToken cancellationToken = default) where TMessage : OutboxMessage;
+    Task PublishAsync<TMessage>(TMessage message, CancellationToken cancellationToken = default) where TMessage : ;
 }

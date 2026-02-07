@@ -6,7 +6,6 @@
 	  <Nullable>enable</Nullable>
 	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 	  <PackageId>CleanArch.Mediator</PackageId>
-	  <Authors>Reza Noei</Authors>
 	  <Description>Mediator pattern implementation for building CQRS-based applications using Clean Architecture.</Description>
 	  <PackageIcon>icon.png</PackageIcon>
 	  <PackageReadmeFile>README.md</PackageReadmeFile>

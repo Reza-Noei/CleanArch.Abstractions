@@ -15,7 +15,7 @@
     <Project Path="src/CleanArch.Domain.Abstractions/CleanArch.Domain.Abstractions.csproj" />
     <Project Path="src/CleanArch.Mediator.AspNetCore/CleanArch.Mediator.AspNetCore.csproj" />
     <Project Path="src/CleanArch.Mediator/CleanArch.Mediator.csproj" />
-    <Project Path="src/CleanArch.Outbox.RabbitMq/CleanArch.Outbox.RabbitMq.csproj" Id="fadbd197-0642-4583-a528-30e77240cdeb" />
+    <Project Path="src/CleanArch.Outbox.AspNetCore/CleanArch.Outbox.AspNetCore.csproj" />
     <Project Path="src/CleanArch.Outbox/CleanArch.Outbox.csproj" Id="06da06ec-25d6-4a7b-8136-b8f06ad6aaf8" />
     <Project Path="src/CleanArch.Repository.EntityFramework/CleanArch.Repository.EntityFramework.csproj" />
     <Project Path="src/CleanArch.Repository/CleanArch.Repository.csproj" />
@@ -25,5 +25,9 @@
     <Project Path="tests/CleanArch.Mediator.AspNetCore.UnitTests/CleanArch.Mediator.AspNetCore.UnitTests.csproj" />
     <Project Path="tests/CleanArch.Mediator.UnitTest.Commons/CleanArch.Mediator.UnitTest.Commons.csproj" />
     <Project Path="tests/CleanArch.Mediator.UnitTests/CleanArch.Mediator.UnitTests.csproj" />
+    <Project Path="tests/CleanArch.Outbox.IntegrationTests/CleanArch.Outbox.IntegrationTests.csproj" Id="b4e4e7c4-c440-44fc-a3b6-fd81ca45bd65" />
+  </Folder>
+  <Folder Name="/tests/OutboxExample/">
+    <Project Path="tests/OutboxExample/OutboxOrchestrator/OutboxOrchestrator.csproj" Id="f26b392e-6492-4389-96f2-8d1299e5755c" />
   </Folder>
 </Solution>

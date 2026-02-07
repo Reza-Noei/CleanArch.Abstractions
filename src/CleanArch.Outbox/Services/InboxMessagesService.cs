@@ -17,13 +17,13 @@ internal class InboxMessagesService<TContext>(TContext context) : IInboxMessages
 
     public async Task<bool> TryInsertAsync(Guid messageId, string messageType, string content, DateTime occurredAt)
     {
-        bool exists = await context.Set<InboxMessage>()
+        bool exists = await context.Set<InboxRecord>()
             .AnyAsync(m => m.Id == messageId);
 
         if (exists)
             return false;
 
-        var inboxMessage = new InboxMessage
+        var inboxMessage = new InboxRecord
         {
             Id = messageId,
             Type = messageType,
@@ -31,7 +31,7 @@ internal class InboxMessagesService<TContext>(TContext context) : IInboxMessages
             OccurredAt = occurredAt
         };
 
-        await context.Set<InboxMessage>().AddAsync(inboxMessage);
+        await context.Set<InboxRecord>().AddAsync(inboxMessage);
 
         await context.SaveChangesAsync();
 
@@ -40,7 +40,7 @@ internal class InboxMessagesService<TContext>(TContext context) : IInboxMessages
 
     public async Task RemoveAsync(Guid messageId)
     {
-        var inboxMessages = context.Set<InboxMessage>();
+        var inboxMessages = context.Set<InboxRecord>();
         var message = inboxMessages.FirstOrDefault();
         if (message != null)
         {

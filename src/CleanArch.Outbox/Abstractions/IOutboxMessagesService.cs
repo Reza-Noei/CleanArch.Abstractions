@@ -9,7 +9,7 @@ internal interface IOutboxMessagesService
     /// 
     /// </summary>
     /// <returns></returns>
-    Task<IEnumerable<OutboxMessage>> GetUnprocessedListAsync();
+    Task<IEnumerable<OutboxRecord>> GetUnprocessedListAsync();
 
     /// <summary>
     /// 
