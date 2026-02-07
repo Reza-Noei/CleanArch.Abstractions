@@ -1,4 +1,4 @@
-﻿namespace CleanArchitecture.Specification;
+﻿namespace CleanArch.Specification;
 
 public class BaseSpecification<T>
 {

@@ -1,4 +1,4 @@
-﻿namespace CleanArchitecture.Specification;
+﻿namespace CleanArch.Specification;
 
 /// <inheritdoc cref="IInMemorySpecificationEvaluator"/>
 public class InMemorySpecificationEvaluator : IInMemorySpecificationEvaluator

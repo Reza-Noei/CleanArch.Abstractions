@@ -1,6 +1,6 @@
-﻿using CleanArchitecture.Domain.Abstractions;
+﻿using CleanArch.Domain.Abstractions;
 
-namespace CleanArchitecture.Repository;
+namespace CleanArch.Repository;
 
 /// <summary>
 /// An abstraction for persistence, based on Ardalis.Specification

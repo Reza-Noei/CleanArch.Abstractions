@@ -1,12 +1,12 @@
-﻿using CleanArchitecture.Mediator.Contracts;
-using CleanArchitecture.Mediator.UnitTest.Commons.Commands;
-using CleanArchitecture.Mediator.UnitTest.Commons.Dto;
-using CleanArchitecture.Mediator.UnitTest.Commons.Queries;
+﻿using CleanArch.Mediator.Contracts;
+using CleanArch.Mediator.UnitTest.Commons.Commands;
+using CleanArch.Mediator.UnitTest.Commons.Dto;
+using CleanArch.Mediator.UnitTest.Commons.Queries;
 using FluentAssertions;
 using Microsoft.Extensions.DependencyInjection;
 using Moq;
 
-namespace CleanArchitecture.Mediator.UnitTests;
+namespace CleanArch.Mediator.UnitTests;
 
 public class QueryHandlerTests
 {

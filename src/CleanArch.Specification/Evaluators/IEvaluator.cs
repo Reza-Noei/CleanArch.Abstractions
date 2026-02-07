@@ -1,4 +1,4 @@
-﻿namespace CleanArchitecture.Specification;
+﻿namespace CleanArch.Specification;
 
 /// <summary>
 /// Represents an evaluator that processes a specification.

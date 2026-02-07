@@ -1,4 +1,4 @@
-﻿namespace CleanArchitecture.Mediator.Contracts;
+﻿namespace CleanArch.Mediator.Contracts;
 
 /// <summary>
 /// Serves as the fundamental contract for all request messages processed by the Mediator.

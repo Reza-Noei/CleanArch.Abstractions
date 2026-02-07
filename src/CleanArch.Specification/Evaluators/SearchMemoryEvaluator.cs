@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace CleanArchitecture.Specification;
+namespace CleanArch.Specification;
 
 /// <summary>
 /// Represents an in-memory evaluator for search expressions.

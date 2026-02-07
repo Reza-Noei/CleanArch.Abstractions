@@ -7,13 +7,15 @@
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<PackageId>CleanArch.Mediator.AspNetCore</PackageId>
 		<Authors>Reza Noei</Authors>
-		<Description>ASP.NET Core extensions and integration utilities for CleanArchitecture.Mediator.</Description>
+		<Description>ASP.NET Core extensions and integration utilities for CleanArch.Mediator.</Description>
 		<PackageIcon>icon.png</PackageIcon>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
 	</PropertyGroup>
 
 	<ItemGroup>
 		<None Include="..\..\build\icons\icon.png" Pack="true" PackagePath="" />
+		<None Include="README.md" Pack="true" PackagePath="\"/>
 	</ItemGroup>
 
 	<ItemGroup>

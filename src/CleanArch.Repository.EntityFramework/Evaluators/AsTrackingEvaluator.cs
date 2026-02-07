@@ -1,4 +1,4 @@
-﻿using CleanArchitecture.Specification;
+﻿using CleanArch.Specification;
 using Microsoft.EntityFrameworkCore;
 
 public class AsTrackingEvaluator : IEvaluator

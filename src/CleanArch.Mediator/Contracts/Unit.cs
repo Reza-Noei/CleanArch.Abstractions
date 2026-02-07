@@ -1,4 +1,4 @@
-﻿namespace CleanArchitecture.Mediator.Contracts;
+﻿namespace CleanArch.Mediator.Contracts;
 
 /// <summary>
 /// Represents a void or “nothing” result in a generic, type-safe way.

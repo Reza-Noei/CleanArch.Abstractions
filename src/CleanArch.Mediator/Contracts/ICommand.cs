@@ -1,4 +1,4 @@
-﻿namespace CleanArchitecture.Mediator.Contracts;
+﻿namespace CleanArch.Mediator.Contracts;
 
 /// <summary>
 /// Represents a command that performs a state-changing operation without 

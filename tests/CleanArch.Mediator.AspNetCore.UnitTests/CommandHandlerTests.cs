@@ -1,12 +1,12 @@
-﻿using CleanArchitecture.Mediator.Contracts;
-using CleanArchitecture.Mediator.UnitTest.Commons.Commands;
-using CleanArchitecture.Mediator.UnitTest.Commons.Dto;
-using CleanArchitecture.Mediator.UnitTest.Commons.Queries;
+﻿using CleanArch.Mediator.Contracts;
+using CleanArch.Mediator.UnitTest.Commons.Commands;
+using CleanArch.Mediator.UnitTest.Commons.Dto;
+using CleanArch.Mediator.UnitTest.Commons.Queries;
 using FluentAssertions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace CleanArchitecture.Mediator.AspNetCore.UnitTests;
+namespace CleanArch.Mediator.AspNetCore.UnitTests;
 
 public class CommandHandlerTests
 {
@@ -39,20 +39,20 @@ public class CommandHandlerTests
         response.LastName.Should().BeSameAs(command.LastName);
     }
 
-    //[Fact]
-    //public async Task SendAsync_WithoutReturnTypeSuccessScenario_ShouldCallTheMockMethodOnce()
-    //{
-    //    // Arrange
-    //    var command = new Update
-    //    {
-    //        Id = 1
-    //    };
+    [Fact]
+    public async Task SendAsync_WithoutReturnTypeSuccessScenario_ShouldCallTheMockMethodOnce()
+    {
+        // Arrange
+        var command = new Update
+        {
+            Id = 1
+        };
 
-    //    // Act
-    //    await _mediator.SendAsync(command);
+        // Act
+        await _mediator.SendAsync(command);
 
-    //    // Assert
-    //}
+        // Assert
+    }
 
     private readonly IMediator _mediator;
 }

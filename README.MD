@@ -1,6 +1,6 @@
-# CleanArchitecture.Abstractions
+# CleanArch.Abstractions
 
-[![NuGet](./build/icons/icon.png)](https://www.nuget.org/packages/CleanArchitecture.Specification)  
+[![NuGet](./build/icons/icon.png)](https://www.nuget.org/packages/CleanArch.Specification)  
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 A .NET abstractions library built for **Clean Architecture**. It provides foundational interfaces and shared architecture building blocks to facilitate the development of modular, maintainable, and testable applications.
@@ -42,21 +42,21 @@ Here are some of the main abstractions and concepts typically exposed by this pa
 ### Installation via NuGet
 
 ```bash
-dotnet add package CleanArchitecture.Abstractions
+dotnet add package CleanArch.Abstractions
 ```
 
 Or via Package Manager Console:
 
 ```
-Install-Package CleanArchitecture.Abstractions
+Install-Package CleanArch.Abstractions
 ```
 
 Including in Your Project
 
 After installing, reference the interfaces in your Domain or Application layer. For example:
 
-    using CleanArchitecture.Abstractions.Repositories;
-    using CleanArchitecture.Abstractions.Specifications;
+    using CleanArch.Abstractions.Repositories;
+    using CleanArch.Abstractions.Specifications;
 
     public class MyService
     {
@@ -80,7 +80,7 @@ After installing, reference the interfaces in your Domain or Application layer. 
 
 🧭 Architectural Guidance
 
-Here’s how you can integrate CleanArchitecture.Abstractions in a typical Clean Architecture solution:
+Here’s how you can integrate CleanArch.Abstractions in a typical Clean Architecture solution:
 
 ```
 ┌───────────────────────┐
@@ -92,7 +92,7 @@ Here’s how you can integrate CleanArchitecture.Abstractions in a typical Clean
 └────────────▲──────────┘
              │
 ┌────────────┴─────────────────────┐
-│  CleanArchitecture.Abstractions  │  ← Your abstractions package
+│  CleanArch.Abstractions  │  ← Your abstractions package
 └────────────▲─────────────────────┘
              │
 ┌────────────┴───────────┐

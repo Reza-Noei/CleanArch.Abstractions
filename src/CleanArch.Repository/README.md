@@ -1,8 +1,8 @@
 ﻿# CleanArchitecture Repository
 
-[![NuGet](https://img.shields.io/nuget/v/CleanArchitecture.Repository.svg)](https://www.nuget.org/packages/CleanArchitecture.Repository/)
+[![NuGet](https://img.shields.io/nuget/v/CleanArch.Repository.svg)](https://www.nuget.org/packages/CleanArch.Repository/)
 
-**CleanArchitecture.Repository** provides a clean, extensible, and testable implementation of the **Repository** and **Unit of Work** patterns, designed to fit perfectly within a Clean Architecture solution.  
+**CleanArch.Repository** provides a clean, extensible, and testable implementation of the **Repository** and **Unit of Work** patterns, designed to fit perfectly within a Clean Architecture solution.  
 It supports **generic repositories**, **specification execution**, and **EF Core integration**, while keeping your domain model persistence-agnostic.
 
 ---
@@ -16,7 +16,7 @@ It supports **generic repositories**, **specification execution**, and **EF Core
 - **Unit of Work Support**
   - `IUnitOfWork` for committing and managing transactions
 - **Full Specification Support**
-  - Works seamlessly with `CleanArchitecture.Specification`
+  - Works seamlessly with `CleanArch.Specification`
 - **Entity Framework Core Ready**
   - Clean extensions for `DbContext`
 - **Highly Testable**
@@ -31,7 +31,7 @@ It supports **generic repositories**, **specification execution**, and **EF Core
 Install via NuGet:
 
 ```bash
-dotnet add package CleanArchitecture.Repository
+dotnet add package CleanArch.Repository
 ```
 
 ---

@@ -9,12 +9,14 @@
 		<Authors>Reza Noei</Authors>
 		<Description>Specification pattern for Clean Architecture.</Description>
 		<PackageIcon>icon.png</PackageIcon>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<InternalsVisibleTo Include="CleanArchitecture.Repository.EntityFramework"/>
+		<InternalsVisibleTo Include="CleanArch.Repository.EntityFramework"/>
 		<None Include="..\..\build\icons\icon.png" Pack="true" PackagePath="" />
+		<None Include="README.md" Pack="true" PackagePath="\"/>
 	</ItemGroup>
 	
 	<ItemGroup>

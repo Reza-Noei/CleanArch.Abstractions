@@ -1,11 +1,11 @@
-﻿using CleanArchitecture.Mediator.Contracts;
-using CleanArchitecture.Mediator.UnitTest.Commons.Dto;
-using CleanArchitecture.Mediator.UnitTest.Commons.Queries;
+﻿using CleanArch.Mediator.Contracts;
+using CleanArch.Mediator.UnitTest.Commons.Dto;
+using CleanArch.Mediator.UnitTest.Commons.Queries;
 using FluentAssertions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace CleanArchitecture.Mediator.AspNetCore.UnitTests;
+namespace CleanArch.Mediator.AspNetCore.UnitTests;
 
 public class QueryHandlerTests
 {

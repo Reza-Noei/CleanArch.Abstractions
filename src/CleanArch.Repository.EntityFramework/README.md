@@ -1,12 +1,12 @@
 ﻿# CleanArchitecture Repository EntityFramework
 
-[![NuGet](https://img.shields.io/nuget/v/CleanArchitecture.Repository.EntityFramework.svg)](https://www.nuget.org/packages/CleanArchitecture.Repository.EntityFramework/)
+[![NuGet](https://img.shields.io/nuget/v/CleanArch.Repository.EntityFramework.svg)](https://www.nuget.org/packages/CleanArch.Repository.EntityFramework/)
 
-**CleanArchitecture.Repository.EntityFramework** provides a clean, extensible, and EF Core–optimized implementation of the Repository & Unit of Work patterns for Clean Architecture solutions.  
+**CleanArch.Repository.EntityFramework** provides a clean, extensible, and EF Core–optimized implementation of the Repository & Unit of Work patterns for Clean Architecture solutions.  
 It integrates seamlessly with:
 
-- `CleanArchitecture.Repository`
-- `CleanArchitecture.Specification`
+- `CleanArch.Repository`
+- `CleanArch.Specification`
 - Entity Framework Core DbContext
 
 This package allows you to keep your domain/application layers persistence-agnostic while enabling powerful data access backed by EF Core.
@@ -29,7 +29,7 @@ This package allows you to keep your domain/application layers persistence-agnos
 Install via NuGet:
 
 ```bash
-dotnet add package CleanArchitecture.Repository.EntityFramework
+dotnet add package CleanArch.Repository.EntityFramework
 ```
 
 ---

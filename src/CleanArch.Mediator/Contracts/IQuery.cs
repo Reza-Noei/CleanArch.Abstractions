@@ -1,4 +1,4 @@
-﻿namespace CleanArchitecture.Mediator.Contracts;
+﻿namespace CleanArch.Mediator.Contracts;
 
 /// <summary>
 /// Represents a read-only request that retrieves data from the system.

@@ -1,4 +1,4 @@
-﻿namespace CleanArchitecture.Specification;
+﻿namespace CleanArch.Specification;
 
 /// <summary>
 /// Represents a specification with a selector for projecting entities of type <typeparamref name="T"/> to <typeparamref name="TResult"/>.

@@ -1,4 +1,4 @@
-﻿namespace CleanArchitecture.Mediator.UnitTest.Commons.Dto;
+﻿namespace CleanArch.Mediator.UnitTest.Commons.Dto;
 
 public class User
 {

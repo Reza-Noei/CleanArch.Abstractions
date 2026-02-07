@@ -1,4 +1,4 @@
-﻿namespace CleanArchitecture.Specification;
+﻿namespace CleanArch.Specification;
 
 /// <summary>
 /// Whether to (subsequently) sort ascending or descending.

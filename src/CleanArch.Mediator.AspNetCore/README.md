@@ -1,8 +1,8 @@
 ﻿# CleanArchitecture Mediator AspNetCore
 
-[![NuGet](https://img.shields.io/nuget/v/CleanArchitecture.Mediator.AspNetCore.svg)](https://www.nuget.org/packages/CleanArchitecture.Mediator.AspNetCore/)
+[![NuGet](https://img.shields.io/nuget/v/CleanArch.Mediator.AspNetCore.svg)](https://www.nuget.org/packages/CleanArch.Mediator.AspNetCore/)
 
-`CleanArchitecture.Mediator.AspNetCore` provides seamless integration between **ASP.NET Core**, **Mediator request/response architecture**, and **Clean Architecture** principles.
+`CleanArch.Mediator.AspNetCore` provides seamless integration between **ASP.NET Core**, **Mediator request/response architecture**, and **Clean Architecture** principles.
 
 It is designed to eliminate boilerplate, enable automatic endpoint discovery, support pipeline behaviors, and provide clean separation between **Application** and **Infrastructure** layers.
 
@@ -25,7 +25,7 @@ This package is ideal for **Vertical Slice Architecture**, **Clean Architecture*
 ## 📦 Installation
 
 ```
-dotnet add package CleanArchitecture.Mediator.AspNetCore
+dotnet add package CleanArch.Mediator.AspNetCore
 ```
 ---
 ## 🚀 Quick Start

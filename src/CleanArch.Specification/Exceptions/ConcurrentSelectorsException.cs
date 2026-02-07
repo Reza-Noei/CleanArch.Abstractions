@@ -1,4 +1,4 @@
-﻿namespace CleanArchitecture.Specification;
+﻿namespace CleanArch.Specification;
 
 /// <summary>
 /// Exception thrown when concurrent selector transforms are defined in a specification.

@@ -1,4 +1,4 @@
-﻿namespace CleanArchitecture.Mediator.Contracts;
+﻿namespace CleanArch.Mediator.Contracts;
 
 /// <summary>
 /// Defines a handler responsible for processing a specific <see cref="IQuery{TResponse}"/>.

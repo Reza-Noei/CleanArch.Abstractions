@@ -1,4 +1,4 @@
-﻿namespace CleanArchitecture.Repository;
+﻿namespace CleanArch.Repository;
 
 /// <summary>
 /// Defines a unit of work that coordinates the execution of database operations

@@ -1,7 +1,7 @@
-﻿using CleanArchitecture.Mediator.Contracts;
-using CleanArchitecture.Mediator.UnitTest.Commons.Dto;
+﻿using CleanArch.Mediator.Contracts;
+using CleanArch.Mediator.UnitTest.Commons.Dto;
 
-namespace CleanArchitecture.Mediator.UnitTest.Commons.Queries;
+namespace CleanArch.Mediator.UnitTest.Commons.Queries;
 
 public class GetById : IQuery<User>
 {

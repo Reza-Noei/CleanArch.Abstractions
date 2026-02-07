@@ -1,6 +1,6 @@
-﻿using CleanArchitecture.Specification;
+﻿using CleanArch.Specification;
 using Microsoft.EntityFrameworkCore;
-using CollectionExtensions = CleanArchitecture.Specification.CollectionExtensions;
+using CollectionExtensions = CleanArch.Specification.CollectionExtensions;
 
 public static class DbSetExtensions
 {

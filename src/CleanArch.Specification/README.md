@@ -1,8 +1,8 @@
 ﻿# CleanArchitecture Specification
 
-[![NuGet](https://img.shields.io/nuget/v/CleanArchitecture.Specification.svg)](https://www.nuget.org/packages/CleanArchitecture.Specification/)
+[![NuGet](https://img.shields.io/nuget/v/CleanArch.Specification.svg)](https://www.nuget.org/packages/CleanArch.Specification/)
 
-**CleanArchitecture.Specification** is a lightweight and flexible **Specification pattern library** for .NET applications following Clean Architecture principles. It allows developers to encapsulate complex business rules and query logic into reusable, composable, and testable specifications, keeping your domain and application layers clean and maintainable.
+**CleanArch.Specification** is a lightweight and flexible **Specification pattern library** for .NET applications following Clean Architecture principles. It allows developers to encapsulate complex business rules and query logic into reusable, composable, and testable specifications, keeping your domain and application layers clean and maintainable.
 
 ---
 
@@ -20,13 +20,13 @@
 Install via NuGet:
 
 ```bash
-dotnet add package CleanArchitecture.Specification
+dotnet add package CleanArch.Specification
 ```
 
 Or via the Package Manager:
 
 ```powershell
-Install-Package CleanArchitecture.Specification
+Install-Package CleanArch.Specification
 ```
 
 ---
@@ -36,7 +36,7 @@ Install-Package CleanArchitecture.Specification
 ### 1. Defining a Specification
 
 ```csharp
-using CleanArchitecture.Specification;
+using CleanArch.Specification;
 using YourProject.Domain.Entities;
 
 public class ActiveUsersSpecification : Specification<User>

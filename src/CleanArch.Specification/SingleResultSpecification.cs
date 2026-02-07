@@ -1,4 +1,4 @@
-﻿namespace CleanArchitecture.Specification;
+﻿namespace CleanArch.Specification;
 
 /// <inheritdoc cref="ISingleResultSpecification{T}"/>
 public class SingleResultSpecification<T> : Specification<T>, ISingleResultSpecification<T>

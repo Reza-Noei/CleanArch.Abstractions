@@ -1,10 +1,9 @@
-﻿using CleanArchitecture.Mediator.Contracts;
-using Microsoft.AspNetCore.Builder;
+﻿using CleanArch.Mediator.Contracts;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System.Reflection;
 
-namespace CleanArchitecture.Mediator.AspNetCore;
+namespace CleanArch.Mediator.AspNetCore;
 
 /// <summary>
 /// Provides extension methods for registering the Mediator and related handlers in ASP.NET Core.
@@ -24,10 +23,25 @@ public static class ServiceCollectionExtensions
         public IHostApplicationBuilder AddMediator(params Assembly[] assemblies)
         {
             // Register the Mediator itself
-            builder.Services.AddSingleton<IMediator, CleanArchitecture.Mediator.Mediator>();
+            builder.Services.AddSingleton<IMediator, CleanArch.Mediator.Mediator>();
 
             // Scan and register command handlers
             var commandHandlerType = typeof(ICommandHandler<,>);
+            foreach (var assembly in assemblies)
+            {
+                var handlers = assembly.GetTypes()
+                    .Where(t => !t.IsAbstract && !t.IsInterface)
+                    .SelectMany(t => t.GetInterfaces(), (t, i) => new { t, i })
+                    .Where(x => x.i.IsGenericType && x.i.GetGenericTypeDefinition() == commandHandlerType);
+
+                foreach (var handler in handlers)
+                {
+                    builder.Services.AddScoped(handler.i, handler.t);
+                }
+            }
+
+            // Scan and register command handlers
+            commandHandlerType = typeof(ICommandHandler<>);
             foreach (var assembly in assemblies)
             {
                 var handlers = assembly.GetTypes()
@@ -58,6 +72,21 @@ public static class ServiceCollectionExtensions
 
             // Scan and register pipeline behaviors
             var pipelineBehaviorType = typeof(IPipelineBehavior<,>);
+            foreach (var assembly in assemblies)
+            {
+                var behaviors = assembly.GetTypes()
+                    .Where(t => !t.IsAbstract && !t.IsInterface)
+                    .SelectMany(t => t.GetInterfaces(), (t, i) => new { t, i })
+                    .Where(x => x.i.IsGenericType && x.i.GetGenericTypeDefinition() == pipelineBehaviorType);
+
+                foreach (var behavior in behaviors)
+                {
+                    builder.Services.AddScoped(behavior.i, behavior.t);
+                }
+            }
+
+            // Scan and register pipeline behaviors
+            pipelineBehaviorType = typeof(IPipelineBehavior<>);
             foreach (var assembly in assemblies)
             {
                 var behaviors = assembly.GetTypes()

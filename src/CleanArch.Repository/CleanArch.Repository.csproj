@@ -9,12 +9,13 @@
 		<Authors>Reza Noei</Authors>
 		<Description>Domain abstractions for Clean Architecture.</Description>
 		<PackageIcon>icon.png</PackageIcon>
-		<ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
-		
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>	
 	</PropertyGroup>
 
 	<ItemGroup>
 		<None Include="..\..\build\icons\icon.png" Pack="true" PackagePath="" />
+		<None Include="README.md" Pack="true" PackagePath="\"/>
 	</ItemGroup>
 
 	<ItemGroup>

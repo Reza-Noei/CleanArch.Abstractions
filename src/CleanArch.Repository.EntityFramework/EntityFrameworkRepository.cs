@@ -1,7 +1,7 @@
-﻿using CleanArchitecture.Domain.Abstractions;
+﻿using CleanArch.Domain.Abstractions;
 using Microsoft.EntityFrameworkCore;
 
-namespace CleanArchitecture.Repository.EntityFramework;
+namespace CleanArch.Repository.EntityFramework;
 
 public class EntityFrameworkRepository<T>(DbContext dbContext) : RepositoryBase<T>(dbContext), IReadRepository<T>, IRepository<T> where T : class, IAggregateRoot
 {

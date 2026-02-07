@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace CleanArchitecture.Specification;
+namespace CleanArch.Specification;
 
 /// <inheritdoc cref="ISpecification{T, TResult}"/>
 public class Specification<T, TResult> : Specification<T>, ISpecification<T, TResult>

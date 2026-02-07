@@ -1,6 +1,6 @@
-﻿using CleanArchitecture.Mediator.Contracts;
+﻿using CleanArch.Mediator.Contracts;
 
-namespace CleanArchitecture.Mediator.UnitTest.Commons.Commands;
+namespace CleanArch.Mediator.UnitTest.Commons.Commands;
 
 public class Update : ICommand
 {

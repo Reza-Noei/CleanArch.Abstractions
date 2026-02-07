@@ -1,6 +1,6 @@
-﻿using CleanArchitecture.Specification;
+﻿using CleanArch.Specification;
 
-namespace CleanArchitecture.Domain.Abstractions;
+namespace CleanArch.Domain.Abstractions;
 
 /// <summary>
 /// Apply this marker interface only to aggregate root entities in your domain model

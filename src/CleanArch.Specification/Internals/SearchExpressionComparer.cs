@@ -1,4 +1,4 @@
-﻿namespace CleanArchitecture.Specification;
+﻿namespace CleanArch.Specification;
 
 internal sealed class SearchExpressionComparer<T> : IComparer<SearchExpressionInfo<T>>
 {

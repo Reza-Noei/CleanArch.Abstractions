@@ -1,5 +1,5 @@
 ﻿
-using CleanArchitecture.Specification;
+using CleanArch.Specification;
 using System.Runtime.InteropServices;
 
 public class SearchEvaluator : IEvaluator

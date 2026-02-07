@@ -1,9 +1,9 @@
-﻿using CleanArchitecture.Mediator.Contracts;
+﻿using CleanArch.Mediator.Contracts;
 using System.Collections.Concurrent;
 using System.Data;
 using System.Reflection;
 
-namespace CleanArchitecture.Mediator;
+namespace CleanArch.Mediator;
 
 public class Mediator : IMediator
 {
@@ -104,9 +104,10 @@ public class Mediator : IMediator
                 await taskObj.ConfigureAwait(false);
 
                 var taskType = taskObj.GetType();
-                if (taskType.IsGenericType)
-                {
+                if (taskType.IsGenericType && typeof(TResponse) != typeof(Unit))
+                {                    
                     PropertyInfo resultProp = taskType.GetProperty("Result")!;
+                    
                     return (TResponse?)resultProp!.GetValue(taskObj)!;
                 }
                 else

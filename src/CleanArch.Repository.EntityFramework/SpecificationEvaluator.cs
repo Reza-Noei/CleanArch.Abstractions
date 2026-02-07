@@ -1,8 +1,8 @@
-﻿using CleanArchitecture.Repository.EntityFramework.Evaluators;
-using CleanArchitecture.Specification;
+﻿using CleanArch.Repository.EntityFramework.Evaluators;
+using CleanArch.Specification;
 using Microsoft.EntityFrameworkCore;
 
-namespace CleanArchitecture.Repository.EntityFramework;
+namespace CleanArch.Repository.EntityFramework;
 
 /// <inheritdoc/>
 public class SpecificationEvaluator : ISpecificationEvaluator

@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace CleanArchitecture.Repository.EntityFramework;
+namespace CleanArch.Repository.EntityFramework;
 
 public class UnitOfWork : IUnitOfWork
 {

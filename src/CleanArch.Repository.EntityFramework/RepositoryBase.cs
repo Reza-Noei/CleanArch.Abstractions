@@ -1,7 +1,7 @@
-﻿using CleanArchitecture.Specification;
+﻿using CleanArch.Specification;
 using Microsoft.EntityFrameworkCore;
 
-namespace CleanArchitecture.Repository.EntityFramework;
+namespace CleanArch.Repository.EntityFramework;
 
 public abstract class RepositoryBase<T> : IRepositoryBase<T>, IReadRepositoryBase<T> where T : class
 {

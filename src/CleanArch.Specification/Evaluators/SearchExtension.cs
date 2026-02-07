@@ -2,7 +2,7 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
 
-namespace CleanArchitecture.Specification;
+namespace CleanArch.Specification;
 
 public static class SearchExtension
 {

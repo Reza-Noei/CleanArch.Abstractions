@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Diagnostics.CodeAnalysis;
 
-namespace CleanArchitecture.Specification;
+namespace CleanArch.Specification;
 
 internal abstract class Iterator<TSource> : IEnumerable<TSource>, IEnumerator<TSource>
 {

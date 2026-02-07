@@ -1,7 +1,7 @@
-﻿using CleanArchitecture.Specification;
+﻿using CleanArch.Specification;
 using System.Runtime.InteropServices;
 
-namespace CleanArchitecture.Repository.EntityFramework.Evaluators;
+namespace CleanArch.Repository.EntityFramework.Evaluators;
 
 public class SearchEvaluator : IEvaluator
 {

@@ -1,11 +1,11 @@
-﻿using CleanArchitecture.Mediator.Contracts;
-using CleanArchitecture.Mediator.UnitTest.Commons;
-using CleanArchitecture.Mediator.UnitTest.Commons.Commands;
-using CleanArchitecture.Mediator.UnitTest.Commons.Dto;
+﻿using CleanArch.Mediator.Contracts;
+using CleanArch.Mediator.UnitTest.Commons;
+using CleanArch.Mediator.UnitTest.Commons.Commands;
+using CleanArch.Mediator.UnitTest.Commons.Dto;
 using FluentAssertions;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace CleanArchitecture.Mediator.UnitTests;
+namespace CleanArch.Mediator.UnitTests;
 
 public class PipelineBehaviorTests
 {

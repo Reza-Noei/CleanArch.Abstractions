@@ -1,4 +1,4 @@
-﻿namespace CleanArchitecture.Repository.EntityFramework;
+﻿namespace CleanArch.Repository.EntityFramework;
 
 public class BaseEntity
 {

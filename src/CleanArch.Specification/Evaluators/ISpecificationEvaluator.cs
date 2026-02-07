@@ -1,4 +1,4 @@
-﻿namespace CleanArchitecture.Specification;
+﻿namespace CleanArch.Specification;
 
 /// <summary>
 /// Evaluates the logic encapsulated by an <see cref="ISpecification{T}"/>.

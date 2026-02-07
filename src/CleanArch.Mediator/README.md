@@ -1,8 +1,8 @@
 ﻿# Clean Architecture Mediator
 
-[![NuGet](https://img.shields.io/nuget/v/CleanArchitecture.Mediator.svg)](https://www.nuget.org/packages/CleanArchitecture.Mediator/)
+[![NuGet](https://img.shields.io/nuget/v/CleanArch.Mediator.svg)](https://www.nuget.org/packages/CleanArch.Mediator/)
 
-`CleanArchitecture.Mediator` is a lightweight and extensible mediator library built for **Clean Architecture** and **CQRS-based** applications.  
+`CleanArch.Mediator` is a lightweight and extensible mediator library built for **Clean Architecture** and **CQRS-based** applications.  
 It is ideal for projects following **Vertical Slice Architecture** or modular monolith designs.
 
 The library provides a central dispatching mechanism for **commands** (write operations) and **queries** (read operations), fully supporting:
@@ -41,7 +41,7 @@ Perfect for building scalable API backends, clean services, modular monoliths, a
 ## 📦 Installation
 
 ```bash
-dotnet add package CleanArchitecture.Mediator
+dotnet add package CleanArch.Mediator
 ```
 
 ---

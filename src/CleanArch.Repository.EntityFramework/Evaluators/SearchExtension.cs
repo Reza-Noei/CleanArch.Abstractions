@@ -1,5 +1,5 @@
 ﻿
-using CleanArchitecture.Specification;
+using CleanArch.Specification;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 using System.Reflection;

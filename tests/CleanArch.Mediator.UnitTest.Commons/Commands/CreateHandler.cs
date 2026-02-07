@@ -1,7 +1,7 @@
-﻿using CleanArchitecture.Mediator.Contracts;
-using CleanArchitecture.Mediator.UnitTest.Commons.Dto;
+﻿using CleanArch.Mediator.Contracts;
+using CleanArch.Mediator.UnitTest.Commons.Dto;
 
-namespace CleanArchitecture.Mediator.UnitTest.Commons.Commands;
+namespace CleanArch.Mediator.UnitTest.Commons.Commands;
 
 public class CreateHandler : ICommandHandler<Create, User>
 {

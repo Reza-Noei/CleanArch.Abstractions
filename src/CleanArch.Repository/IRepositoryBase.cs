@@ -1,6 +1,6 @@
-﻿using CleanArchitecture.Specification;
+﻿using CleanArch.Specification;
 
-namespace CleanArchitecture.Repository;
+namespace CleanArch.Repository;
 
 /// <summary>
 /// <para>

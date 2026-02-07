@@ -1,11 +1,11 @@
 <Project>
-  <PropertyGroup>
-    <Authors>Reza Noei</Authors>
-    <Company>Noei</Company>
-    <RepositoryUrl>https://github.com/Reza-Noei/CleanArchitecture.Abstractions</RepositoryUrl>
-    <Version>0.2.0</Version>
-    <AssemblyVersion>0.2.0.0</AssemblyVersion>
-    <FileVersion>0.2.0.0</FileVersion>
-    <PackageVersion>0.2.0</PackageVersion>
-  </PropertyGroup>
+	<PropertyGroup>
+		<Authors>Reza Noei</Authors>
+		<Company>Noei</Company>
+		<RepositoryUrl>https://github.com/Reza-Noei/CleanArchitecture.Abstractions</RepositoryUrl>
+		<Version>0.3.1</Version>
+		<AssemblyVersion>0.3.1.0</AssemblyVersion>
+		<FileVersion>0.3.1.0</FileVersion>
+		<PackageVersion>0.3.1</PackageVersion>
+	</PropertyGroup>
 </Project>
