@@ -1,4 +1,4 @@
-﻿namespace Messaging.OutboxInbox;
+﻿namespace CleanArch.Messaging;
 
 /// <summary>
 /// Publisher for messages using the Outbox pattern.

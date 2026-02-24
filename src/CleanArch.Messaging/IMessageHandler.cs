@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace Messaging.OutboxInbox;
+namespace CleanArch.Messaging;
 
 /// <summary>
 /// Base interface for all message handlers.

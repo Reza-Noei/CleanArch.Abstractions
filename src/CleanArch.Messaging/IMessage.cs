@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace Messaging.OutboxInbox;
+namespace CleanArch.Messaging;
 
 /// <summary>
 /// Base interface for all messages that can be sent through the messaging system.

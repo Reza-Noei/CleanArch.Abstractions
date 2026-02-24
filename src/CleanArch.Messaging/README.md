@@ -66,7 +66,7 @@ public interface IMessagePublisher
 ### 1. Define a Message
 
 ```csharp
-using Messaging.OutboxInbox;
+using CleanArch.Messaging;
 
 public sealed class OrderCreatedMessage : IMessage
 {
@@ -79,7 +79,7 @@ public sealed class OrderCreatedMessage : IMessage
 ### 2. Implement a Handler
 
 ```csharp
-using Messaging.OutboxInbox;
+using CleanArch.Messaging;
 
 public sealed class OrderCreatedHandler : IMessageHandler<OrderCreatedMessage>
 {
