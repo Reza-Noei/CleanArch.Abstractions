@@ -1,6 +1,6 @@
-﻿using Messaging.OutboxInbox;
+﻿using CleanArch.Messaging;
 
-namespace OutboxInbox.Api.Messages;
+namespace CleanArch.Messaging.Api.Messages;
 
 public sealed class ConversionCompletedMessage : IMessage
 {

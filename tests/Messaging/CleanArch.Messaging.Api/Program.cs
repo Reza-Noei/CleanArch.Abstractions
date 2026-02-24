@@ -1,10 +1,11 @@
-using Messaging.OutboxInbox;
-using Messaging.OutboxInbox.AspNetCore.Extensions;
-using Messaging.OutboxInbox.AspNetCore.Extensions.DbContextExtensions;
+using CleanArch.Messaging;
+using CleanArch.Messaging.Api.Data;
+using CleanArch.Messaging.Api.Messages;
+using CleanArch.Messaging.Api.Models;
+using CleanArch.Messaging.AspNetCore.Extensions;
+using CleanArch.Messaging.AspNetCore.Extensions.DbContextExtensions;
 using Microsoft.EntityFrameworkCore;
-using OutboxInbox.Api.Data;
-using OutboxInbox.Api.Messages;
-using OutboxInbox.Api.Models;
+
 
 var builder = WebApplication.CreateBuilder(args);
 

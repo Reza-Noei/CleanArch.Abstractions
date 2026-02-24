@@ -1,8 +1,7 @@
-﻿using Messaging.OutboxInbox;
+﻿using CleanArch.Messaging.Api.Models;
 using Microsoft.EntityFrameworkCore;
-using OutboxInbox.Api.Models;
 
-namespace OutboxInbox.Api.Data;
+namespace CleanArch.Messaging.Api.Data;
 
 public class AppDbContext : DbContext
 {

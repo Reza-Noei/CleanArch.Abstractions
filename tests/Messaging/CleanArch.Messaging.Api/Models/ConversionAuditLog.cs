@@ -1,4 +1,4 @@
-﻿namespace OutboxInbox.Api.Models;
+﻿namespace CleanArch.Messaging.Api.Models;
 
 public sealed class ConversionAuditLog
 {

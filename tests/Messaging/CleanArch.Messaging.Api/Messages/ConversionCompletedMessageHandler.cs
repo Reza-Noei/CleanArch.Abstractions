@@ -1,8 +1,7 @@
-﻿using Messaging.OutboxInbox;
-using OutboxInbox.Api.Data;
-using OutboxInbox.Api.Models;
+﻿using CleanArch.Messaging.Api.Data;
+using CleanArch.Messaging.Api.Models;
 
-namespace OutboxInbox.Api.Messages;
+namespace CleanArch.Messaging.Api.Messages;
 
 /// <summary>
 /// Handler for ConversionCompletedMessage - creates audit logs
