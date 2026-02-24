@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 
-namespace Messaging.OutboxInbox.AspNetCore.Extensions;
+namespace CleanArch.Messaging.AspNetCore.Extensions;
 
 internal static class LoggerExtensions
 {

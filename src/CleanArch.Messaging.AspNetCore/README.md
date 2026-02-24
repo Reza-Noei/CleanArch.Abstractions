@@ -1,8 +1,8 @@
-# Messaging.OutboxInbox.AspNetCore
+# CleanArch.Messaging.AspNetCore
 
 ASP.NET Core integration for the Transactional Outbox & Inbox patterns — wiring up EF Core, RabbitMQ, background hosted services, and automatic message processing.
 
-[![NuGet](https://img.shields.io/nuget/v/Messaging.OutboxInbox.AspNetCore)](https://www.nuget.org/packages/Messaging.OutboxInbox.AspNetCore)
+[![NuGet](https://img.shields.io/nuget/v/CleanArch.Messaging.AspNetCore)](https://www.nuget.org/packages/CleanArch.Messaging.AspNetCore)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![.NET](https://img.shields.io/badge/.NET-10.0-purple)](https://dotnet.microsoft.com/download)
 
@@ -12,7 +12,7 @@ ASP.NET Core integration for the Transactional Outbox & Inbox patterns — wirin
 
 ## Overview
 
-This package builds on top of [`Messaging.OutboxInbox`](https://www.nuget.org/packages/Messaging.OutboxInbox) to provide everything needed to run the Outbox/Inbox pattern in a real ASP.NET Core application:
+This package builds on top of [`CleanArch.Messaging`](https://www.nuget.org/packages/CleanArch.Messaging) to provide everything needed to run the Outbox/Inbox pattern in a real ASP.NET Core application:
 
 - **EF Core model customization** — automatically adds `OutboxRecords` and `InboxRecords` tables to your existing `DbContext`
 - **EF Core interceptor** — captures saved `OutboxRecord` entries and enqueues them immediately after `SaveChanges`
@@ -26,7 +26,7 @@ This package builds on top of [`Messaging.OutboxInbox`](https://www.nuget.org/pa
 ## Installation
 
 ```bash
-dotnet add package Messaging.OutboxInbox.AspNetCore
+dotnet add package CleanArch.Messaging.AspNetCore
 ```
 
 ---
@@ -212,7 +212,7 @@ A partial index on `"ProcessedAt" IS NULL` is created on both tables for efficie
 
 | Package | Version |
 |---|---|
-| `Messaging.OutboxInbox` | 1.0.0 |
+| `CleanArch.Messaging` | 1.0.0 |
 | `Microsoft.Extensions.Hosting.Abstractions` | 10.0.3 |
 | `Microsoft.Extensions.Options.ConfigurationExtensions` | 10.0.3 |
 | `Npgsql.EntityFrameworkCore.PostgreSQL` | 10.0.0 |
@@ -225,7 +225,7 @@ A partial index on `"ProcessedAt" IS NULL` is created on both tables for efficie
 
 | Package | Purpose |
 |---|---|
-| [`Messaging.OutboxInbox`](https://www.nuget.org/packages/Messaging.OutboxInbox) | Core abstractions — `IMessage`, `IMessageHandler`, `IMessagePublisher` |
+| [`CleanArch.Messaging`](https://www.nuget.org/packages/CleanArch.Messaging) | Core abstractions — `IMessage`, `IMessageHandler`, `IMessagePublisher` |
 
 ---
 

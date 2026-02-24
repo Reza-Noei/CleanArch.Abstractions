@@ -1,8 +1,8 @@
-﻿using Messaging.OutboxInbox.Entities;
+﻿using CleanArch.Messaging.AspNetCore.Entities;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json;
 
-namespace Messaging.OutboxInbox;
+namespace CleanArch.Messaging.AspNetCore;
 
 internal sealed class MessagePublisher : IMessagePublisher
 {

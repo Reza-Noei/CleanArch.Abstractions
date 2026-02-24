@@ -1,6 +1,6 @@
-﻿using Messaging.OutboxInbox.Entities;
+﻿using CleanArch.Messaging.AspNetCore.Entities;
 
-namespace Messaging.OutboxInbox.AspNetCore.Queues;
+namespace CleanArch.Messaging.AspNetCore.Queues;
 
 public interface IOutboxMessageQueue
 {

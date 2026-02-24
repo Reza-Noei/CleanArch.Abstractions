@@ -1,10 +1,8 @@
-﻿using Messaging.OutboxInbox.Configurations;
+﻿using CleanArch.Messaging.AspNetCore.Configurations;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using Microsoft.Extensions.Logging;
-using System.Diagnostics;
 
-namespace Messaging.OutboxInbox.AspNetCore.Extensions.DbContextExtensions;
+namespace CleanArch.Messaging.AspNetCore.Extensions.DbContextExtensions;
 
 internal sealed class MessagingModelCustomizer : ModelCustomizer
 {

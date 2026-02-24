@@ -1,4 +1,4 @@
-﻿namespace Messaging.OutboxInbox.AspNetCore.Options;
+﻿namespace CleanArch.Messaging.AspNetCore.Options;
 
 public sealed class MessageSubscriberOptions
 {

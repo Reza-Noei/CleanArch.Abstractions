@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 
-namespace Messaging.OutboxInbox.AspNetCore.Extensions.DbContextExtensions;
+namespace CleanArch.Messaging.AspNetCore.Extensions.DbContextExtensions;
 
 public static class DbContextOptionsBuilderExtensions
 {

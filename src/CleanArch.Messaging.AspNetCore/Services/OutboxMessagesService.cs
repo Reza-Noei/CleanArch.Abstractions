@@ -1,8 +1,8 @@
-﻿using Messaging.OutboxInbox.Entities;
+﻿using CleanArch.Messaging.AspNetCore.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
-namespace Messaging.OutboxInbox.Services;
+namespace CleanArch.Messaging.AspNetCore.Services;
 
 public sealed class OutboxMessagesService : IOutboxMessagesService
 {

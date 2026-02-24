@@ -2,7 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
-namespace Messaging.OutboxInbox.AspNetCore.Extensions.DbContextExtensions;
+namespace CleanArch.Messaging.AspNetCore.Extensions.DbContextExtensions;
 
 internal sealed class InboxMessageOnlySupportOption : IDbContextOptionsExtension
 {

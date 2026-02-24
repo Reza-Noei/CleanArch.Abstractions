@@ -1,15 +1,15 @@
-﻿using MediatR;
-using Messaging.OutboxInbox.AspNetCore.Extensions;
-using Messaging.OutboxInbox.AspNetCore.Queues;
-using Messaging.OutboxInbox.Entities;
-using Messaging.OutboxInbox.Services;
+﻿using CleanArch.Messaging.AspNetCore.Entities;
+using CleanArch.Messaging.AspNetCore.Extensions;
+using CleanArch.Messaging.AspNetCore.Queues;
+using CleanArch.Messaging.AspNetCore.Services;
+using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System.Diagnostics;
 using System.Text.Json;
 
-namespace Messaging.OutboxInbox.AspNetCore.HostedServices;
+namespace CleanArch.Messaging.AspNetCore.HostedServices;
 
 internal sealed class InboxHostedService : BackgroundService
 {

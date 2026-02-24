@@ -1,8 +1,8 @@
-﻿using Messaging.OutboxInbox.AspNetCore.Extensions;
-using Messaging.OutboxInbox.AspNetCore.Options;
-using Messaging.OutboxInbox.AspNetCore.Queues;
-using Messaging.OutboxInbox.Entities;
-using Messaging.OutboxInbox.Services;
+﻿using CleanArch.Messaging.AspNetCore.Entities;
+using CleanArch.Messaging.AspNetCore.Extensions;
+using CleanArch.Messaging.AspNetCore.Options;
+using CleanArch.Messaging.AspNetCore.Queues;
+using CleanArch.Messaging.AspNetCore.Services;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
@@ -11,7 +11,7 @@ using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using System.Text;
 
-namespace Messaging.OutboxInbox.AspNetCore.MessageBroker;
+namespace CleanArch.Messaging.AspNetCore.MessageBroker;
 
 internal sealed class RabbitMqSubscriber : IHostedService, IAsyncDisposable
 {
@@ -115,8 +115,6 @@ internal sealed class RabbitMqSubscriber : IHostedService, IAsyncDisposable
             }
             else
             {
-                // Bug 3 fix: construct the record directly from data we already have
-                // instead of fetching all unprocessed messages from DB
                 var record = new InboxRecord
                 {
                     Id = messageId.Value,

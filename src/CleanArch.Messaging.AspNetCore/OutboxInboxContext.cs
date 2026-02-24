@@ -1,10 +1,10 @@
-﻿using Messaging.OutboxInbox.AspNetCore.Extensions.DbContextExtensions;
-using Messaging.OutboxInbox.Configurations;
-using Messaging.OutboxInbox.Entities;
+﻿using CleanArch.Messaging.AspNetCore.Configurations;
+using CleanArch.Messaging.AspNetCore.Entities;
+using CleanArch.Messaging.AspNetCore.Extensions.DbContextExtensions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Messaging.OutboxInbox;
+namespace CleanArch.Messaging.AspNetCore;
 
 public abstract class OutboxInboxContext : DbContext
 {

@@ -1,8 +1,8 @@
-﻿using Messaging.OutboxInbox.Entities;
+﻿using CleanArch.Messaging.AspNetCore.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Messaging.OutboxInbox.Configurations;
+namespace CleanArch.Messaging.AspNetCore.Configurations;
 
 internal sealed class OutboxRecordConfiguration : IEntityTypeConfiguration<OutboxRecord>
 {

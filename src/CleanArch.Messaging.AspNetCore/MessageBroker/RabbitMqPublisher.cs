@@ -1,12 +1,12 @@
-﻿using Messaging.OutboxInbox.AspNetCore.Extensions;
-using Messaging.OutboxInbox.AspNetCore.Options;
-using Messaging.OutboxInbox.Entities;
+﻿using CleanArch.Messaging.AspNetCore.Entities;
+using CleanArch.Messaging.AspNetCore.Extensions;
+using CleanArch.Messaging.AspNetCore.Options;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using RabbitMQ.Client;
 using System.Text;
 
-namespace Messaging.OutboxInbox.AspNetCore.MessageBroker;
+namespace CleanArch.Messaging.AspNetCore.MessageBroker;
 
 internal sealed class RabbitMqPublisher : IAsyncDisposable
 {

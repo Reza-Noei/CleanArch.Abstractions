@@ -1,12 +1,12 @@
-﻿using Messaging.OutboxInbox.AspNetCore.Queues;
-using Messaging.OutboxInbox.Entities;
+﻿using CleanArch.Messaging.AspNetCore.Entities;
+using CleanArch.Messaging.AspNetCore.Queues;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.Extensions.DependencyInjection;
 using System.Collections.Concurrent;
 
-namespace Messaging.OutboxInbox.AspNetCore.Extensions.DbContextExtensions;
+namespace CleanArch.Messaging.AspNetCore.Extensions.DbContextExtensions;
 
 internal sealed class OutboxEnqueueInterceptor : SaveChangesInterceptor
 {

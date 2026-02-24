@@ -1,9 +1,9 @@
-﻿using Messaging.OutboxInbox.AspNetCore.Extensions.DbContextExtensions;
-using Messaging.OutboxInbox.AspNetCore.HostedServices;
-using Messaging.OutboxInbox.AspNetCore.MessageBroker;
-using Messaging.OutboxInbox.AspNetCore.Options;
-using Messaging.OutboxInbox.AspNetCore.Queues;
-using Messaging.OutboxInbox.Services;
+﻿using CleanArch.Messaging.AspNetCore.Extensions.DbContextExtensions;
+using CleanArch.Messaging.AspNetCore.HostedServices;
+using CleanArch.Messaging.AspNetCore.MessageBroker;
+using CleanArch.Messaging.AspNetCore.Options;
+using CleanArch.Messaging.AspNetCore.Queues;
+using CleanArch.Messaging.AspNetCore.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.Extensions.DependencyInjection;
@@ -12,7 +12,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using RabbitMQ.Client;
 
-namespace Messaging.OutboxInbox.AspNetCore.Extensions;
+namespace CleanArch.Messaging.AspNetCore.Extensions;
 
 public static class IHostApplicationBuilderExtensions
 {

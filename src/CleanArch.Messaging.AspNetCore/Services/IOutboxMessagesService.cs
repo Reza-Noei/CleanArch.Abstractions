@@ -1,6 +1,6 @@
-﻿using Messaging.OutboxInbox.Entities;
+﻿using CleanArch.Messaging.AspNetCore.Entities;
 
-namespace Messaging.OutboxInbox.Services;
+namespace CleanArch.Messaging.AspNetCore.Services;
 
 public interface IOutboxMessagesService
 {

@@ -1,4 +1,4 @@
-﻿namespace Messaging.OutboxInbox.AspNetCore.Extensions;
+﻿namespace CleanArch.Messaging.AspNetCore.Extensions;
 
 public sealed class MessagingConfiguration
 {

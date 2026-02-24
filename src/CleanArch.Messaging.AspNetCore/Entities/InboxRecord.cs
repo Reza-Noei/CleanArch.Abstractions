@@ -1,4 +1,4 @@
-﻿namespace Messaging.OutboxInbox.Entities;
+﻿namespace CleanArch.Messaging.AspNetCore.Entities;
 
 public class InboxRecord
 {

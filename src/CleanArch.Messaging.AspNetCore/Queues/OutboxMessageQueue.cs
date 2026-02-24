@@ -1,7 +1,7 @@
-﻿using Messaging.OutboxInbox.Entities;
+﻿using CleanArch.Messaging.AspNetCore.Entities;
 using System.Collections.Concurrent;
 
-namespace Messaging.OutboxInbox.AspNetCore.Queues;
+namespace CleanArch.Messaging.AspNetCore.Queues;
 
 internal sealed class OutboxMessageQueue : IOutboxMessageQueue
 {
